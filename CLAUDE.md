@@ -42,3 +42,4 @@ factory.sh                  Script de la fábrica: ejecuta una tarea con claude 
 - Nunca modifiques tests existentes para que pasen; arregla el código.
 - Rutas en `src/routes`, lógica en `src/services`.
 - Commits pequeños con mensajes en español.
+- Si añades o cambias un endpoint, actualiza la tabla de endpoints de README.md en el mismo cambio.

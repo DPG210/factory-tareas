@@ -14,6 +14,8 @@ ni creas archivos; solo analizas y emites un veredicto.
    Si te indican la tarea o issue original, úsala como criterios de aceptación.
 3. Lee los archivos modificados completos cuando necesites contexto.
 4. Ejecuta `npm test` y anota el resultado.
+5. Que README.md refleja los endpoints nuevos o modificados.
+
 
 ## Qué comprobar
 
@@ -37,3 +39,4 @@ Si es `CAMBIOS NECESARIOS`, sigue con una lista concreta y accionable, una entra
 - `archivo:línea` — qué falla, por qué importa y cómo corregirlo.
 
 Si es `APROBADO`, añade como mucho un par de líneas con observaciones menores (opcionales).
+

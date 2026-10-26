@@ -5,7 +5,7 @@ Factory**: una base pequeña, testeada y con reglas claras que después amplían
 (Claude Code) de forma autónoma, ya sea en local con `factory.sh` o en GitHub mencionando a
 `@claude`.
 
-Funcionalidades como el borrado de tareas, filtros, paginación, fechas de vencimiento o
+Funcionalidades como filtros, paginación, fechas de vencimiento o
 autenticación **no están implementadas a propósito**: son las tareas de práctica reservadas
 para la fábrica.
 
@@ -37,6 +37,7 @@ npm run dev    # arranca con recarga automática (node --watch)
 | GET    | `/tasks`               | Lista todas las tareas                        |         |
 | GET    | `/tasks/:id`           | Devuelve una tarea                            | 404     |
 | PATCH  | `/tasks/:id/complete`  | Marca la tarea como completada                | 404     |
+| DELETE | `/tasks/:id`           | Borra una tarea y devuelve 204 sin cuerpo     | 404     |
 
 Una tarea tiene `id` (uuid), `title` (1-200 caracteres), `completed` (por defecto `false`) y
 `createdAt` (ISO 8601). Los errores se devuelven como `{ "error": "mensaje" }`.
