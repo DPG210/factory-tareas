@@ -1,0 +1,25 @@
+# Dependencias
+node_modules/
+
+# Cobertura y salidas de tests
+coverage/
+.vitest/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Configuración local de Claude Code
+.claude/settings.local.json
