@@ -2,6 +2,7 @@ import { Router } from 'express';
 import {
   completeTask,
   createTask,
+  deleteTask,
   getTask,
   listTasks,
 } from '../services/tasksService.js';
@@ -23,6 +24,11 @@ router.get('/:id', (req, res) => {
 
 router.patch('/:id/complete', (req, res) => {
   res.json(completeTask(req.params.id));
+});
+
+router.delete('/:id', (req, res) => {
+  deleteTask(req.params.id);
+  res.status(204).end();
 });
 
 export default router;

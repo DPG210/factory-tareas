@@ -72,6 +72,11 @@ export function completeTask(id) {
   return { ...task };
 }
 
+export function deleteTask(id) {
+  const task = findTask(id);
+  tasks = tasks.filter((t) => t !== task);
+}
+
 // Vacía el almacenamiento; pensado para aislar los tests entre sí.
 export function resetTasks() {
   tasks = [];
